@@ -10,4 +10,13 @@ $(document).ready(function() {
       'top' : (clientY - 40) + 'px'
     })
   }})
+
+  $('.a').on({
+    'mouseover' : function() {
+      $('#cursor').addClass('mini')
+    },
+    'mouseout' : function() {
+      $('#cursor').removeClass('mini')
+    },
+  })
 })
