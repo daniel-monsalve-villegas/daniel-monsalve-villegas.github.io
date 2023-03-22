@@ -320,6 +320,15 @@ body {
   transform: scale(0.7);
 }
 
+@media (max-width: 575.98px) {
+  .section .h2 {
+    font-size: 5em;
+  }
+
+  #cursor {
+    display: none;
+  }
+}
 @keyframes circle1 {
   from {
     transform: rotate(0deg) scale(3);
