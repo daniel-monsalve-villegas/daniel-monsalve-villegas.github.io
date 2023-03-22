@@ -19,13 +19,11 @@
   --contrast-color: #042729;
 }
 
-@media screen and(prefers-color-scheme: light) {
+@media screen and(prefers-color-scheme: dark) {
   :root {
-    --white : #181818;
-    --black: #E0E0E0;
-    --black7: rgba(255, 255, 255, 0.75);
-    --black5: rgba(255, 255, 255, .5);
-    --white2: rgba(0, 0, 0, 0.2)
+    --main-color: #1e1e1f;
+    --secondary-color: #58505c;
+    --contrast-color: #fbd8d6;
   }
 }
 
@@ -190,6 +188,7 @@ body {
   font-family: var(--italic-font);
   font-size: 6em;
   line-height: 1em;
+  padding: 3em 0 0;
   color: var(--contrast-color);
 }
 
@@ -200,7 +199,7 @@ body {
 
 .section .grid {
   width: 90%;
-  max-width: 40em;
+  max-width: 55em;
   margin: 1em 0;
 
   display: grid;
@@ -227,13 +226,13 @@ body {
 }
 .section .img {
   width: 100%;
-  background: lime;
 }
 
 .section .h4 {
   width: 100%;
   height: 100%;
-  background-color: var(--black5);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   backdrop-filter: blur(1rem);
   position: absolute;
   bottom: 0;
@@ -244,7 +243,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  color: var(--white);
   font-family: var(--serif-font);
   font-size: 1.8em;
 
@@ -258,24 +256,19 @@ body {
   transform: translateZ(1) scale(1);
 }
 
-.works {
-  background: var(--white);
-  color: var(--black);
-}
-
 .works .h2 {
   margin-bottom: 0 0 1rem;
   color: inherit;
 }
 
 .about .h2 {
-  margin: 0 0 1em;
+  margin: 0 0 0.5em;
 }
 
 .about .p {
   max-width: 40rem;
   margin: 0 0 2rem;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: left;
 }
 
@@ -300,19 +293,24 @@ body {
 .footer {
   padding: 2em 0;
   text-align: center;
-  color: var(--white);
+  background-color: var(--contrast-color);
+  color: var(--main-color);
   position: relative;
   z-index: 2;
+}
+
+.footer .span {
+  font-family: var(--serif-font);
 }
 
 #cursor {
   width: 3em;
   height: 3em;
-  background-color: var(--secondary-color);
+  background-color: var(--contrast-color);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
   border-radius: 50%;
   mix-blend-mode: difference;
