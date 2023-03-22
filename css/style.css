@@ -261,8 +261,19 @@ body {
   color: inherit;
 }
 
-.about .h2 {
-  margin: 0 0 0.5em;
+.about__title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2em;
+  margin: 0 0 1.5em;
+}
+
+.about__img {
+  border-radius: 50%;
+  width: 7em;
+  height:7em;
 }
 
 .about .p {
@@ -320,6 +331,13 @@ body {
   transform: scale(0.7);
 }
 
+@media (max-width: 757px) {
+  .about__title {
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
 @media (max-width: 575.98px) {
   .section .h2 {
     font-size: 5em;
@@ -329,6 +347,7 @@ body {
     display: none;
   }
 }
+
 @keyframes circle1 {
   from {
     transform: rotate(0deg) scale(3);
