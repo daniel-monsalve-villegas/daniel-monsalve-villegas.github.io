@@ -270,7 +270,7 @@ body {
 }
 
 .works .h2 {
-  margin-bottom: 0 0 1rem;
+  margin: 0 0 1rem;
   color: inherit;
 }
 
@@ -351,9 +351,13 @@ body {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 470px) {
   .section .h2 {
-    font-size: 4.5em;
+    font-size: 3em;
+  }
+
+  .section .h3 {
+    font-size: 2em;
   }
 
   #cursor {
