@@ -19,4 +19,15 @@ $(document).ready(function() {
       $('#cursor').removeClass('mini')
     },
   })
+
+  let headerPosition = $('.header').offset().top;
+  $(window).scroll(function() {
+    let scrollValue = $(window).scrollTop();
+    if (scrollValue > headerPosition) {
+      $('.header').addClass('scroll');
+    } else {
+      $('.header').removeClass('scroll');
+    }
+  })
 })
+

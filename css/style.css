@@ -1,18 +1,7 @@
 :root {
-  --italic-font: 'Fugaz One', cursive;
-  --serif-font: 'Oleo Script', cursive;
-  --sans-font: 'Monda', sans-serif;
-
-  /* Second option 
   --bold-font: 'Ultra', serif;
   --cursive-font: 'Stint Ultra Expanded', cursive;
-  --regular-font: 'Slabo 13px', serif;
-  */
-
-  /* Third option 
-  --snas-font: 'Poppins', sans-serif;
-  --serif-font: 'Halant', serif;
-  */
+  --regular-font: 'Syne', sans-serif;
 
   --main-color: #e1e1e0;
   --secondary-color: #a7afa3;
@@ -91,7 +80,7 @@ form, button, input, textarea, select {
 }
 
 body {
-  font-family: var(--sans-font);
+  font-family: var(--regular-font);
   font-size: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -107,7 +96,7 @@ body {
   width: 100%;
   min-height: 5em;
   padding: 1em 2em;
-  background: var(--secondary-color);
+  background-color: var(--main-color);
 
   display: flex;
   flex-flow: row wrap;
@@ -116,6 +105,11 @@ body {
 
   position: fixed;
   z-index: 3;
+  transition: background-color 0.3s ease-in-out
+}
+
+.scroll {
+  background-color: var(--secondary-color);
 }
 
 .header .ul {
@@ -127,6 +121,25 @@ body {
 
 .header .li {
   margin: 0 1em;
+}
+
+.header .a {
+  color: var(--main-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.scroll .a {
+  color: var(--contrast-color);
+}
+
+.header .a__title {
+  font-family: var(--bold-font);
+  font-size: 2em;
+}
+
+.header .svg-header {
+  width: 1.6em;
+  height: 1.6em;
 }
 
 .main {
@@ -158,7 +171,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  font-family: var(--serif-font);
+  font-family: var(--cursive-font);
 }
 .section .ul .li {
   margin: 0 1em;
@@ -181,19 +194,19 @@ body {
 }
 
 .section .info__span {
-  font-family: var(--italic-font);
+  font-family: var(--bold-font);
 }
 
 .section .h2 {
-  font-family: var(--italic-font);
+  font-family: var(--bold-font);
   font-size: 6em;
   line-height: 1em;
-  padding: 3em 0 0;
+  padding: 2em 0 0;
   color: var(--contrast-color);
 }
 
 .section .h3 {
-  font-family: var(--sans-font);
+  font-family: var(--regular-font);
   font-size: 2.7em;
 }
 
@@ -243,7 +256,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-family: var(--serif-font);
+  font-family: var(--cursive-font);
   font-size: 1.8em;
 
   opacity: 0;
@@ -311,7 +324,7 @@ body {
 }
 
 .footer .span {
-  font-family: var(--serif-font);
+  font-family: var(--cursive-font);
 }
 
 #cursor {
