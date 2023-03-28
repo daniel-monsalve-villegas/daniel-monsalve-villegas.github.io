@@ -203,12 +203,11 @@ body {
     transform: translateY(10px) rotate(225deg);
   }
 
-  .nav :checked ~ .burger .line:nth-child(2) {
+  .nav :checked ~ .burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg); 
-    width: auto;
   }
 
-  .nav :checked ~ .burger .line:nth-child(3) {
+  .nav :checked ~ .burger .line:nth-child(2) {
     opacity: 0;
   }
 
