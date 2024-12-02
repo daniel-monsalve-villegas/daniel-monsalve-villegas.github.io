@@ -1,7 +1,7 @@
 :root {
-  --bold-font: 'Ultra', serif;
-  --cursive-font: 'Stint Ultra Expanded', cursive;
-  --regular-font: 'Syne', sans-serif;
+  --bold-font: "Ultra", serif;
+  --cursive-font: "Stint Ultra Expanded", cursive;
+  --regular-font: "Syne", sans-serif;
 
   --main-color: #e1e1e0;
   --secondary-color: #a7afa3;
@@ -36,7 +36,7 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
-  cursor: none;
+  /* cursor: none; */
 }
 
 video {
@@ -101,7 +101,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .header {
@@ -406,23 +406,23 @@ body {
   font-family: var(--cursive-font);
 }
 
-#cursor {
-  width: 3em;
-  height: 3em;
-  background-color: var(--contrast-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  pointer-events: none;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-}
-
-#cursor.mini {
-  transform: scale(0.7);
-}
-
+/* #cursor { */
+/*   width: 3em; */
+/*   height: 3em; */
+/*   background-color: var(--contrast-color); */
+/*   position: fixed; */
+/*   top: 0; */
+/*   left: 0; */
+/*   z-index: 4; */
+/*   pointer-events: none; */
+/*   border-radius: 50%; */
+/*   mix-blend-mode: difference; */
+/* } */
+/**/
+/* #cursor.mini { */
+/*   transform: scale(0.7); */
+/* } */
+/**/
 @media (max-width: 757px) {
   .about__title {
     justify-content: center;

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*$(document).ready(function () {
   $('body').on({
@@ -23,18 +23,18 @@
   });
 
   /* let headerPosition = $('.header').offset().top; */
-  /* $(window).scroll(function () { */
-  /*   let scrollValue = $(window).scrollTop(); */
-  /*   let bottom = $('.header').css('bottom'); */
-  /*   if (scrollValue > 0) { */
-  /*     $('.header').css('bottom', scrollValue + 'px'); */
-  /*   } else { */
-  /*     $('.header').css('bottom', scrollValue + '-5em'); */
-  /*   } */
-  /*   if (scrollValue > headerPosition) { */
-  /*     $('.header').addClass('sticky'); */
-  /*   } else { */
-  /*     $('.header').removeClass('sticky'); */
-  /*   } */
-  /* }); */
-});
+/* $(window).scroll(function () { */
+/*   let scrollValue = $(window).scrollTop(); */
+/*   let bottom = $('.header').css('bottom'); */
+/*   if (scrollValue > 0) { */
+/*     $('.header').css('bottom', scrollValue + 'px'); */
+/*   } else { */
+/*     $('.header').css('bottom', scrollValue + '-5em'); */
+/*   } */
+/*   if (scrollValue > headerPosition) { */
+/*     $('.header').addClass('sticky'); */
+/*   } else { */
+/*     $('.header').removeClass('sticky'); */
+/*   } */
+/* }); */
+// });
